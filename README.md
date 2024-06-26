@@ -24,11 +24,11 @@ Frequency Division: By cascading multiple flip-flops or counters, more complex d
 
 APPLICATIONS:
 
-Microcontrollers and Processors: To provide different clock signals for different parts of the system, such as the CPU, memory, and peripherals.
+* Microcontrollers and Processors: To provide different clock signals for different parts of the system, such as the CPU, memory, and peripherals.
+* Communication Systems: To generate clocks for different baud rates in serial communication.
+* Timing and Control: To generate specific time intervals for operations in digital systems.
 
-Communication Systems: To generate clocks for different baud rates in serial communication.
 
-Timing and Control: To generate specific time intervals for operations in digital systems.
 
 ![VirtualBox_vsdworkshop_25_06_2024_22_09_48](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/e91773f1-f4c3-49c0-916f-05dfbcd4a6ea)
 
