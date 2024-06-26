@@ -6,6 +6,7 @@ Step 1: Open the terminal window to open the editor named leafpad for writing th
 
 Step 2: Write the C program for sum of one to n in the terminal 
 * To check the result in the terminal window by writing the below command line
+  
     gcc sum1ton.c
     ls -ltr
 
