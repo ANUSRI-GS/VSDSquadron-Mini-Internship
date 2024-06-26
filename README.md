@@ -4,7 +4,10 @@ Step 1: Open the terminal window to open the editor named leafpad for writing th
 
 ![output](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/880a637e-18a7-4099-abf3-949fea9ed37b)
 
-Step 2: Write the C program for sum of one to n in the terminal:
+Step 2: Write the C program for sum of one to n in the terminal 
+* To check the result in the terminal window by writing the below command line
+    gcc sum1ton.c
+    ls -ltr
 
 ![code](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/ac1bd248-68cc-414f-bb88-98869a2bbba3)
 
