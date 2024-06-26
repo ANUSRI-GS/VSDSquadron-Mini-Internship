@@ -10,6 +10,21 @@
 ![Screenshot (96)](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/08e0e2af-949a-41dd-af88-60f100d7f1d2)
 
 # TASK 2:
+CLOCK CYCLE DIVIDER:
+A clock cycle divider (or clock divider) is a circuit that divides the input clock frequency to produce a lower frequency output clock signal. This is commonly used in digital systems to provide different clock rates to various parts of the system that may operate at different speeds.
+
+How a Clock Divider Works?
+Basic Division: The simplest form of a clock divider is a counter. For example, a binary counter will toggle its output after a certain number of input clock pulses, effectively dividing the frequency. A divide-by-2 counter will output a clock signal with half the frequency of the input clock.
+
+Flip-Flops: A common way to implement a clock divider is using flip-flops. A D flip-flop can be connected in a toggle mode (where the Q' output is fed back to the D input) to divide the clock frequency by 2.
+
+Frequency Division: By cascading multiple flip-flops or counters, more complex division ratios can be achieved. For example, two cascaded divide-by-2 flip-flops will create a divide-by-4 clock divider.
+
+APPLICATIONS:
+Microcontrollers and Processors: To provide different clock signals for different parts of the system, such as the CPU, memory, and peripherals.
+Communication Systems: To generate clocks for different baud rates in serial communication.
+Timing and Control: To generate specific time intervals for operations in digital systems.
+
 ![VirtualBox_vsdworkshop_25_06_2024_22_09_48](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/e91773f1-f4c3-49c0-916f-05dfbcd4a6ea)
 
 ![VirtualBox_vsdworkshop_25_06_2024_22_27_17](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/7fe4abbf-cfd1-4d44-b3b0-d9a3751820a2)
