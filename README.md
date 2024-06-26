@@ -23,6 +23,12 @@ Step 3:Compile and run the C code using RISC-V Simulator:
       ls -ltr sum_one_to_n.o
   
 ![c1](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/88a26bcd-110b-49e2-ba9e-9b857690317e)
+
+Step 4:Assembly code
+* Command line gor generating the assembly code is:
+
+      riscv64-unknown-elf-objdump -d sum1ton.o
+  
 ![c2](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/448a122d-4874-413f-b656-f83617bfa740)
 ![comm2](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/864ecdeb-7526-4fb1-8c5c-050beadf8822)
 ![Screenshot (94)](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/011f3028-21be-493f-af66-dddef2cdaa2e)
