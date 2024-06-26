@@ -13,7 +13,7 @@ Step 2: Write the C program for sum of one to n in the terminal
 
 ![code](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/ac1bd248-68cc-414f-bb88-98869a2bbba3)
 
-Step 3:Compile and run the C code using RISC-V Simulator:
+Step 3: Compile and run the C code using RISC-V Simulator:
 * By using the command line
 
       cat sum_one_to_n.c
@@ -24,7 +24,7 @@ Step 3:Compile and run the C code using RISC-V Simulator:
   
 ![c1](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/88a26bcd-110b-49e2-ba9e-9b857690317e)
 
-Step 4:Assembly code
+Step 4: Assembly code
 * Command line gor generating the assembly code is:
 
       riscv64-unknown-elf-objdump -d sum1ton.o
@@ -32,7 +32,7 @@ Step 4:Assembly code
 ![c2](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/448a122d-4874-413f-b656-f83617bfa740)
 ![comm2](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/864ecdeb-7526-4fb1-8c5c-050beadf8822)
 
-Step 5:Search the main()
+Step 5: Search the main()
 
 ![Screenshot (94)](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/011f3028-21be-493f-af66-dddef2cdaa2e)
 ![Screenshot (95)](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/33d563d3-8c4c-4ac9-a89f-556639d18f76)
