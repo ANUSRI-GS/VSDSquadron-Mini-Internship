@@ -13,6 +13,15 @@ Step 2: Write the C program for sum of one to n in the terminal
 
 ![code](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/ac1bd248-68cc-414f-bb88-98869a2bbba3)
 
+Step 3:Compile and run the C code using RISC-V Simulator:
+* By using the command line
+
+      cat sum_one_to_n.c
+* Run the C code by RISC-V Simulator by commanding:
+
+      riscv-unknown-elf-gcc -O1 _mabi=lp64 _march=rv64i -o sum_one_to_n.o sum_one_to_n.c
+      ls -ltr sum_one_to_n.o
+  
 ![c1](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/88a26bcd-110b-49e2-ba9e-9b857690317e)
 ![c2](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/448a122d-4874-413f-b656-f83617bfa740)
 ![comm2](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/864ecdeb-7526-4fb1-8c5c-050beadf8822)
