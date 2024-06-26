@@ -7,7 +7,7 @@ Step 1: Open the terminal window to open the editor named leafpad for writing th
 Step 2: Write the C program for sum of one to n in the terminal 
 * To check the result in the terminal window by writing the below command line
   
-      gcc sum1ton.c
+      gcc s1ton.c
       ls -ltr
 * To generate the output by using "./a.out"
 
@@ -16,18 +16,18 @@ Step 2: Write the C program for sum of one to n in the terminal
 Step 3: Compile and run the C code using RISC-V Simulator:
 * By using the command line
 
-      cat sum_one_to_n.c
+      cat s1ton.c
 * Run the C code by RISC-V Simulator by commanding:
 
-      riscv-unknown-elf-gcc -O1 _mabi=lp64 _march=rv64i -o sum_one_to_n.o sum_one_to_n.c
-      ls -ltr sum_one_to_n.o
+      riscv-unknown-elf-gcc -O1 _mabi=lp64 _march=rv64i -o s1ton.o s1ton.c
+      ls -ltr s1ton.o
   
 ![c1](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/88a26bcd-110b-49e2-ba9e-9b857690317e)
 
 Step 4: Assembly code
 * Command line gor generating the assembly code is:
 
-      riscv64-unknown-elf-objdump -d sum1ton.o
+      riscv64-unknown-elf-objdump -d s1ton.o
   
 ![c2](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/448a122d-4874-413f-b656-f83617bfa740)
 ![comm2](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/864ecdeb-7526-4fb1-8c5c-050beadf8822)
