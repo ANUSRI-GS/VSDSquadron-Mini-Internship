@@ -28,7 +28,7 @@ APPLICATIONS:
 * Communication Systems: To generate clocks for different baud rates in serial communication.
 * Timing and Control: To generate specific time intervals for operations in digital systems.
 
-
+# C code for Clock Cycle Divider:
 
 ![VirtualBox_vsdworkshop_25_06_2024_22_09_48](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/e91773f1-f4c3-49c0-916f-05dfbcd4a6ea)
 
