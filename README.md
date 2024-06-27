@@ -76,9 +76,13 @@ Run the code by using( ./a.out ) :
 
 
 # TASK3: 
-To compile C code under the RISC-V architecture and ensure that the output of GCC and RISC-V compilers using following command
+STEP 1:To compile C code under the RISC-V architecture and ensure that the output of GCC and RISC-V compilers using following command
        
        spike pk clockcycledivisor.o
 
 ![VirtualBox_vsdworkshop_27_06_2024_11_36_19](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/fc4cf358-8c89-4ec3-ad68-ffca3b338718)
 
+STEP 2: Disassemble and compare the ouputs:
+Disassemble the output binaries to compare the assembly code. Use the following command
+
+       riscv64_unknown-elf-objdump -d clockcycledivisor.o | less
