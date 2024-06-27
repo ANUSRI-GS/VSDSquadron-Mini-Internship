@@ -80,4 +80,5 @@ To compile C code under the RISC-V architecture and ensure that the output of GC
        
        spike pk clockcycledivisor.o
 
+![VirtualBox_vsdworkshop_27_06_2024_11_36_19](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/fc4cf358-8c89-4ec3-ad68-ffca3b338718)
 
