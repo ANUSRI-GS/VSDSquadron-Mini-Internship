@@ -86,3 +86,5 @@ STEP 2: Disassemble and compare the ouputs:
 Disassemble the output binaries to compare the assembly code. Use the following command
 
        riscv64_unknown-elf-objdump -d clockcycledivisor.o | less
+
+![VirtualBox_vsdworkshop_27_06_2024_11_36_39](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/8db2fa82-d466-45f2-bdd1-84e0a830e86b)
