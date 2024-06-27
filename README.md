@@ -100,3 +100,5 @@ To set a breakpoint at the address 0x100b0 in  assembly code and then run the pr
 Find the contents of first counter value a1 using below command
 
       reg 0 a1
+
+![VirtualBox_vsdworkshop_27_06_2024_11_37_00](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/fdb884e3-785a-48d1-8f05-d8e83a8f384b)
