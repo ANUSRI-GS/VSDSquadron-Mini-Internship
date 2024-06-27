@@ -73,3 +73,11 @@ Run the code by using( ./a.out ) :
 ![VirtualBox_vsdworkshop_25_06_2024_22_54_12](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/835d33fe-df49-4bbf-a1a3-a6f2a7dbb9fe)
 
 ![VirtualBox_vsdworkshop_25_06_2024_22_46_40](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/a96e846e-0b5a-4587-a47a-ea10a69a4f81)
+
+
+# TASK3: 
+To compile C code under the RISC-V architecture and ensure that the output of GCC and RISC-V compilers using following command
+       
+       spike pk clockcycledivisor.o
+
+
