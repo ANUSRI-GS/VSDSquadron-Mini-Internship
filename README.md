@@ -102,3 +102,6 @@ Find the contents of first counter value a1 using below command
       reg 0 a1
 
 ![VirtualBox_vsdworkshop_27_06_2024_11_37_00](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/fdb884e3-785a-48d1-8f05-d8e83a8f384b)
+
+![VirtualBox_vsdworkshop_27_06_2024_11_37_11](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/f45d0239-821e-48c8-a9b4-3d853c66bdb3)
+
