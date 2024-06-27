@@ -88,3 +88,15 @@ Disassemble the output binaries to compare the assembly code. Use the following 
        riscv64_unknown-elf-objdump -d clockcycledivisor.o | less
 
 ![VirtualBox_vsdworkshop_27_06_2024_11_36_39](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/8db2fa82-d466-45f2-bdd1-84e0a830e86b)
+
+STEP 3: Debug by using following command
+
+       spike pk -d clockcycledivisor.o
+       
+To set a breakpoint at the address 0x100b0 in  assembly code and then run the program in a debugger from that point onward using below command
+
+      until pc 0 100b0
+      
+Find the contents of first counter value a1 using below command
+
+      reg 0 a1
