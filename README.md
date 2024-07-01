@@ -105,3 +105,112 @@ Find the contents of first counter value a1 using below command
 
 ![VirtualBox_vsdworkshop_27_06_2024_11_37_11](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/f45d0239-821e-48c8-a9b4-3d853c66bdb3)
 
+#TASK 4:
+
+Here is the identification of various RISC-V instruction types and the exact 32-bit instruction codes for the given RISC-V instructions:
+
+### R-Type Instructions
+R-Type instructions have the format: `opcode[6:0] | rd[11:7] | funct3[14:12] | rs1[19:15] | rs2[24:20] | funct7[31:25]`
+
+1. **ADD r1, r2, r3**
+   ```
+   funct7 | rs2  | rs1  | funct3 | rd  | opcode
+   0000000| 00011| 00010| 000    | 00001| 0110011
+   ```
+   32-bit instruction: `0000000 00011 00010 000 00001 0110011`
+
+2. **SUB r3, r1, r2**
+   ```
+   funct7 | rs2  | rs1  | funct3 | rd  | opcode
+   0100000| 00010| 00001| 000    | 00011| 0110011
+   ```
+   32-bit instruction: `0100000 00010 00001 000 00011 0110011`
+
+3. **AND r2, r1, r3**
+   ```
+   funct7 | rs2  | rs1  | funct3 | rd  | opcode
+   0000000| 00011| 00001| 111    | 00010| 0110011
+   ```
+   32-bit instruction: `0000000 00011 00001 111 00010 0110011`
+
+4. **OR r8, r2, r5**
+   ```
+   funct7 | rs2  | rs1  | funct3 | rd  | opcode
+   0000000| 00101| 00010| 110    | 01000| 0110011
+   ```
+   32-bit instruction: `0000000 00101 00010 110 01000 0110011`
+
+5. **XOR r8, r1, r4**
+   ```
+   funct7 | rs2  | rs1  | funct3 | rd  | opcode
+   0000000| 00100| 00001| 100    | 01000| 0110011
+   ```
+   32-bit instruction: `0000000 00100 00001 100 01000 0110011`
+
+6. **SLT r10, r2, r4**
+   ```
+   funct7 | rs2  | rs1  | funct3 | rd  | opcode
+   0000000| 00100| 00010| 010    | 01010| 0110011
+   ```
+   32-bit instruction: `0000000 00100 00010 010 01010 0110011`
+
+7. **SRL r16, r11, r2**
+   ```
+   funct7 | rs2  | rs1  | funct3 | rd  | opcode
+   0000000| 00010| 01011| 101    | 10000| 0110011
+   ```
+   32-bit instruction: `0000000 00010 01011 101 10000 0110011`
+
+8. **SLL r15, r11, r2**
+   ```
+   funct7 | rs2  | rs1  | funct3 | rd  | opcode
+   0000000| 00010| 01011| 001    | 01111| 0110011
+   ```
+   32-bit instruction: `0000000 00010 01011 001 01111 0110011`
+
+### I-Type Instructions
+I-Type instructions have the format: `imm[11:0] | rs1[19:15] | funct3[14:12] | rd[11:7] | opcode[6:0]`
+
+1. **ADDI r12, r3, 5**
+   ```
+   imm[11:0]  | rs1  | funct3 | rd  | opcode
+   000000000101| 00011| 000    | 01100| 0010011
+   ```
+   32-bit instruction: `000000000101 00011 000 01100 0010011`
+
+2. **LW r13, r11, 2**
+   ```
+   imm[11:0]  | rs1  | funct3 | rd  | opcode
+   000000000010| 01011| 010    | 01101| 0000011
+   ```
+   32-bit instruction: `000000000010 01011 010 01101 0000011`
+
+### S-Type Instructions
+S-Type instructions have the format: `imm[11:5] | rs2[24:20] | rs1[19:15] | funct3[14:12] | imm[4:0] | opcode[6:0]`
+
+1. **SW r3, r1, 4**
+   ```
+   imm[11:5] | rs2  | rs1  | funct3 | imm[4:0]  | opcode
+   0000000   | 00011| 00001| 010    | 00100     | 0100011
+   ```
+   32-bit instruction: `0000000 00011 00001 010 00100 0100011`
+
+### B-Type Instructions
+B-Type instructions have the format: `imm[12] | imm[10:5] | rs2[24:20] | rs1[19:15] | funct3[14:12] | imm[4:1] | imm[11] | opcode[6:0]`
+
+1. **BNE r0, r1, 20**
+   ```
+   imm[12] | imm[10:5] | rs2  | rs1  | funct3 | imm[4:1]  | imm[11] | opcode
+   0       | 000010    | 00001| 00000| 001    | 0100      | 0       | 1100011
+   ```
+   32-bit instruction: `0000000 00001 00000 001 0100 0 1100011`
+
+2. **BEQ r0, r0, 15**
+
+        imm[12] | imm[10:5] | rs2  | rs1  | funct3 | imm[4:1]  | imm[11] | opcode
+       0       | 000001    | 00000| 00000| 000    | 1110      | 0       | 1100011
+   32-bit instruction: `0000000 00000 00000 000 1110 0 1100011`
+
+### Summary
+These 32-bit instruction codes follow the RISC-V instruction formats for each type of instruction. Each code is constructed according to the respective format (R, I, S, B) and uses the appropriate opcode and funct fields as specified by the RISC-V ISA.
+
