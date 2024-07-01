@@ -105,7 +105,7 @@ Find the contents of first counter value a1 using below command
 
 ![VirtualBox_vsdworkshop_27_06_2024_11_37_11](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/f45d0239-821e-48c8-a9b4-3d853c66bdb3)
 
-#TASK 4:
+# TASK 4:
 
 Here is the identification of various RISC-V instruction types and the exact 32-bit instruction codes for the given RISC-V instructions:
 
@@ -210,7 +210,4 @@ B-Type instructions have the format: `imm[12] | imm[10:5] | rs2[24:20] | rs1[19:
         imm[12] | imm[10:5] | rs2  | rs1  | funct3 | imm[4:1]  | imm[11] | opcode
        0       | 000001    | 00000| 00000| 000    | 1110      | 0       | 1100011
    32-bit instruction: `0000000 00000 00000 000 1110 0 1100011`
-
-### Summary
-These 32-bit instruction codes follow the RISC-V instruction formats for each type of instruction. Each code is constructed according to the respective format (R, I, S, B) and uses the appropriate opcode and funct fields as specified by the RISC-V ISA.
 
