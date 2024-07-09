@@ -226,4 +226,5 @@ Use these repositories to clone the necessary files and set up your environment.
 * Execute the functional simulation using your simulation tools. Generate waveform snapshots during the simulation to capture the behavior of the RISC-V core.
 * After obtaining the waveform snapshots, upload them to your GitHub repository. Ensure they are well-organized and clearly labeled for reference.
 
+![VirtualBox_vsdworkshop_08_07_2024_22_27_49](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/a1f25c30-ecea-42fb-8499-57c3c8cd22f4)
 
