@@ -247,7 +247,7 @@ To visualize the simulation results, open the waveform using GTKWave with this c
 
 ### Analysing the Output Waveform of various instructions:
 
-`INSTRUCTION 1:ADD r1,r2,r3`
+* INSTRUCTION 1:`ADD r1,r2,r3`
 
 ![VirtualBox_vsdworkshop_09_07_2024_11_35_46](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/373d22a5-2d7d-45dd-b401-84fda558563d)
 
