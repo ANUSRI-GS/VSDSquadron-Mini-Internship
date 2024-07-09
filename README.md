@@ -277,9 +277,9 @@ To visualize the simulation results, open the waveform using GTKWave with this c
 
 * INSTRUCTION 8: `BEQ R0, R0, 15`
 
+![VirtualBox_vsdworkshop_09_07_2024_11_43_05](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/b99bcc1c-d5c5-4bac-ad4e-919b7030a9e6)
 
-
-* INSTRUCTION 8: `BEQ R0, R0, 15`
+* INSTRUCTION 9: 
   
 
 
