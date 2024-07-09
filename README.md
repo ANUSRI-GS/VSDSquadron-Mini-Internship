@@ -281,6 +281,8 @@ To visualize the simulation results, open the waveform using GTKWave with this c
 
 * INSTRUCTION 9: `BNE r0,r1,20`
 
+![VirtualBox_vsdworkshop_09_07_2024_11_45_00](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/fd708126-55d5-4bee-aeee-9ac1c883d4be)
+
   
   
 
