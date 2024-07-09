@@ -240,4 +240,8 @@ To visualize the simulation results, open the waveform using GTKWave with this c
 
     gtkwave iiitb_rv32i.vcd
 
+### GTKWAVE WINDOW:
+
+
+
 
