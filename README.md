@@ -265,6 +265,9 @@ To visualize the simulation results, open the waveform using GTKWave with this c
 
 *INSTRUCTION 5: `XOR r8,r1,r4`
 
+![VirtualBox_vsdworkshop_09_07_2024_11_39_48](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/2c7590c2-02cc-4253-b7bf-99056afa0a12)
+
+
 
 
 
