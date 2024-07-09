@@ -259,9 +259,10 @@ To visualize the simulation results, open the waveform using GTKWave with this c
 
 ![VirtualBox_vsdworkshop_09_07_2024_11_39_33](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/e031933c-9016-4d4a-baa0-e5c04908f69c)
 
-
+* INSTRUCTION 4: `OR r8,r2,r5`
+  
 ![VirtualBox_vsdworkshop_09_07_2024_11_38_26](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/19ef52fc-43d6-43c8-a53c-74749ae32c97)
 
-* INSTRUCTION 4: `OR r8,r2,r5`
+
 
 
