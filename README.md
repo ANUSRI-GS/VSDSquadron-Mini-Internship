@@ -213,4 +213,17 @@ B-Type instructions have the format: `imm[12] | imm[10:5] | rs2[24:20] | rs1[19:
 
 # TASK 5:
 
+Functional Simulation Experiment Using RISC-V Core Verilog Netlist and Testbench:
+
+* Refer to the following GitHub repositories as a basis for your work:
+
+  * VSD Squadron Mini Internship by Maaz
+  * RV32I Implementation by Vinay Rayapati
+Use these repositories to clone the necessary files and set up your environment.
+
+* Install and configure GTKWave for waveform visualization. This will allow you to view and analyze the results of your simulation.
+* Modify the provided testbench file to suit your specific requirements. Ensure it accurately tests the functionality of your RISC-V core.
+* Execute the functional simulation using your simulation tools. Generate waveform snapshots during the simulation to capture the behavior of the RISC-V core.
+* After obtaining the waveform snapshots, upload them to your GitHub repository. Ensure they are well-organized and clearly labeled for reference.
+
 
