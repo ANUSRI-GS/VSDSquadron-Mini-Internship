@@ -211,3 +211,6 @@ B-Type instructions have the format: `imm[12] | imm[10:5] | rs2[24:20] | rs1[19:
        0       | 000001    | 00000| 00000| 000    | 1110      | 0       | 1100011
    32-bit instruction: `0000000 00000 00000 000 1110 0 1100011`
 
+# TASK 5:
+
+
