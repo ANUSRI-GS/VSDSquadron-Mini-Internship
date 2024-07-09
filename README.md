@@ -228,3 +228,6 @@ Use these repositories to clone the necessary files and set up your environment.
 
 ![VirtualBox_vsdworkshop_08_07_2024_22_27_49](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/a1f25c30-ecea-42fb-8499-57c3c8cd22f4)
 
+### VERILOG TESTBENCH:
+
+
