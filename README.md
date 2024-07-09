@@ -232,4 +232,12 @@ Use these repositories to clone the necessary files and set up your environment.
 
 ![VirtualBox_vsdworkshop_08_07_2024_20_10_45](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/6c8b5b35-b493-4653-af6a-cf191b777e31)
 
+Use the following command to compile and run the simulation of the Verilog code:
+
+    iverilog -o rv32i_simulation iiitb_rv32i.v iiitb_rv32i_tb.v
+
+To visualize the simulation results, open the waveform using GTKWave with this command:
+
+    gtkwave iiitb_rv32i.vcd
+
 
