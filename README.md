@@ -271,6 +271,8 @@ To visualize the simulation results, open the waveform using GTKWave with this c
 
 ![VirtualBox_vsdworkshop_09_07_2024_11_40_02](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/ac18757a-a295-4d28-84c1-5bf700c238b1)
 
+* INSTRUCTION 7: `ADDI r12,r3,r5`
+
 
 
 
