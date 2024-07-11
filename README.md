@@ -314,98 +314,65 @@ Ground (GND)	           GND
 Programming the FPGA:
 
 Define the Clock Divider Logic:
-verilog
-module ClockDivider(
-    input clk,          // Input clock signal
-    input reset,        // Reset signal
-    output reg clk_out1, // Divided clock output 1
-    output reg clk_out2  // Divided clock output 2
-);
 
-reg [31:0] counter1;
-reg [31:0] counter2;
+    module ClockDivider(
+       input clk,          // Input clock signal
+       input reset,        // Reset signal
+       output reg clk_out1, // Divided clock output 1
+       output reg clk_out2  // Divided clock output 2
+    );
 
-// Parameters for division
-parameter DIV_FACTOR1 = 50_000_000; // Adjust for desired frequency
-parameter DIV_FACTOR2 = 25_000_000; // Adjust for desired frequency
+    reg [31:0] counter1;
+    reg [31:0] counter2;
 
-always @(posedge clk or posedge reset) begin
-    if (reset) begin
-        counter1 <= 0;
-        clk_out1 <= 0;
-    end else begin
-        if (counter1 == DIV_FACTOR1 - 1) begin
-            counter1 <= 0;
-            clk_out1 <= ~clk_out1;
-        end else begin
-            counter1 <= counter1 + 1;
-        end
+    // Parameters for division
+    parameter DIV_FACTOR1 = 50_000_000; // Adjust for desired frequency
+    parameter DIV_FACTOR2 = 25_000_000; // Adjust for desired frequency
+
+    always @(posedge clk or posedge reset) begin
+       if (reset) begin
+          counter1 <= 0;
+          clk_out1 <= 0;
+       end else begin
+          if (counter1 == DIV_FACTOR1 - 1) begin
+              counter1 <= 0;
+              clk_out1 <= ~clk_out1;
+         end else begin
+              counter1 <= counter1 + 1;
+         end
+       end
     end
-end
 
-always @(posedge clk or posedge reset) begin
-    if (reset) begin
-        counter2 <= 0;
-        clk_out2 <= 0;
-    end else begin
-        if (counter2 == DIV_FACTOR2 - 1) begin
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
             counter2 <= 0;
-            clk_out2 <= ~clk_out2;
+            clk_out2 <= 0;
         end else begin
-            counter2 <= counter2 + 1;
-        end
-    end
-end
+            if (counter2 == DIV_FACTOR2 - 1) begin
+                counter2 <= 0;
+                clk_out2 <= ~clk_out2;
+            end else begin
+                counter2 <= counter2 + 1;
+            end
+         end
+      end
 
-endmodule
-Top Module to Connect Inputs and Outputs:
-verilog
-Copy code
-module TopModule(
-    input clk,
-    input reset,
-    output clk_out1,
-    output clk_out2
-);
+    endmodule
+    
+### Programming and Testing:
 
-ClockDivider clk_div (
-    .clk(clk),
-    .reset(reset),
-    .clk_out1(clk_out1),
-    .clk_out2(clk_out2)
-);
+^ Synthesize and Implement: Use FPGA design software (like Xilinx Vivado) to synthesize and implement the design.
+* Generate Bitstream: Create a bitstream file to program the FPGA.
+* Upload Bitstream: Use the appropriate tool to upload the bitstream to the VSDSquadron Mini FPGA board.
+* Test the Outputs: Verify the divided clock outputs using an oscilloscope or logic analyzer.
 
-endmodule
-Constraints File:
-xdc
-Copy code
-# Clock input
-set_property PACKAGE_PIN P17 [get_ports clk]
-set_property IOSTANDARD LVCMOS33 [get_ports clk]
-
-# Divided clock outputs
-set_property PACKAGE_PIN K18 [get_ports clk_out1]
-set_property IOSTANDARD LVCMOS33 [get_ports clk_out1]
-
-set_property PACKAGE_PIN K17 [get_ports clk_out2]
-set_property IOSTANDARD LVCMOS33 [get_ports clk_out2]
-
-# Reset
-set_property PACKAGE_PIN L17 [get_ports reset]
-set_property IOSTANDARD LVCMOS33 [get_ports reset]
-Programming and Testing:
-
-Synthesize and Implement: Use FPGA design software (like Xilinx Vivado) to synthesize and implement the design.
-Generate Bitstream: Create a bitstream file to program the FPGA.
-Upload Bitstream: Use the appropriate tool to upload the bitstream to the VSDSquadron Mini FPGA board.
-Test the Outputs: Verify the divided clock outputs using an oscilloscope or logic analyzer.
-Application and Use Cases:
+### Application and Use Cases:
 
 This Clock Cycle Divider can be used in various applications requiring precise timing control, including:
 
-Digital Signal Processing: For creating multiple clock domains with different frequencies.
-Data Acquisition Systems: To synchronize data collection at different rates.
-Embedded Systems: Where different subsystems may require different clock frequencies.
+   * Digital Signal Processing: For creating multiple clock domains with different frequencies.
+   * Data Acquisition Systems: To synchronize data collection at different rates.
+   * Embedded Systems: Where different subsystems may require different clock frequencies.
 This project highlights the capabilities of the VSDSquadron Mini in handling clock management tasks, making it a powerful tool for developing complex digital systems.
 
 
