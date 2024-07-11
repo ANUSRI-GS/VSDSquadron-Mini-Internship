@@ -361,7 +361,7 @@ Define the Clock Divider Logic:
     
 ### Programming and Testing:
 
-^ Synthesize and Implement: Use FPGA design software (like Xilinx Vivado) to synthesize and implement the design.
+* Synthesize and Implement: Use FPGA design software (like Xilinx Vivado) to synthesize and implement the design.
 * Generate Bitstream: Create a bitstream file to program the FPGA.
 * Upload Bitstream: Use the appropriate tool to upload the bitstream to the VSDSquadron Mini FPGA board.
 * Test the Outputs: Verify the divided clock outputs using an oscilloscope or logic analyzer.
