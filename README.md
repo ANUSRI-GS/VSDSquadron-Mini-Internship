@@ -305,7 +305,7 @@ The Clock Cycle Divider project aims to create a digital clock divider circuit u
 
 ### Pinout Diagram:
 
-| Component              	| VSDSquadron Mini Pin  |
+|Component              	| VSDSquadron Mini Pin  |
 |-------------------------|---------------------- |
 | Clock Source          	|  Clock Input Pin      |
 | Divided Clock Output 1	| GPIO Pin 1            |
