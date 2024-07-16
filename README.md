@@ -287,21 +287,20 @@ To visualize the simulation results, open the waveform using GTKWave with this c
 
 ### Overview
 
-The Clock Cycle Divider project aims to create a digital clock divider circuit using the VSDSquadron Mini, a versatile FPGA development board. The circuit divides the input clock signal to produce lower frequency outputs, useful in various timing applications, including digital signal processing, data acquisition, and embedded systems.
+This project involves the implementation of a 4:2 Encoder combinational circuit using the VSDSquadron Mini, a RISC-V based SoC development kit. A 4:2 Encoder is a crucial circuit in digital electronics, widely used in the design of more complex encoders and digital systems. A 4:2 Encoder converts four input lines into two binary output lines, effectively encoding the input data. It's a central component in various digital circuits that require data compression or prioritization. This project demonstrates the practical application of digital logic and RISC-V architecture in executing encoding operations, reflecting the process of reading and writing binary data through GPIO pins, implementing the operation of a 4:2 Encoder through digital logic gates, simulated using PlatformIO IDE, and displaying the outputs using LEDs.
 
 ### Components Required:
 
 * VSDSquadron Mini FPGA Board
-* Clock Source (External oscillator or onboard clock)
+* Push Buttons
+* 2 LEDs for displaying the Output
 * Breadboard
 * Jumper Wires
-* Power Supply
+* VS Code for Software Development
 
-### Circuit Connection:
+### Hardware Connection:
 
-* Clock Source to FPGA: Connect the clock source to the clock input pin on the VSDSquadron Mini. Ensure proper voltage levels matching the FPGA's requirements.
-* Output Pins: Configure multiple GPIO pins on the FPGA as clock outputs. Each pin will provide a different divided clock signal.
-* Power and Ground: Connect the power supply to the FPGA board and ensure a common ground connection for all components.
+
 
 ### Pinout Diagram:
 
