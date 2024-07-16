@@ -284,6 +284,7 @@ To visualize the simulation results, open the waveform using GTKWave with this c
 ![VirtualBox_vsdworkshop_09_07_2024_11_45_00](https://github.com/ANUSRI-GS/VSDSquadron-Mini-Internship/assets/160397977/fd708126-55d5-4bee-aeee-9ac1c883d4be)
 
  # TASK 6:
+### Implementing 4:2 Encoder using VSDSquadron Mini
 
 ### Overview
 
@@ -311,69 +312,15 @@ This project involves the implementation of a 4:2 Encoder combinational circuit 
 | LED                   	| GPIO Pins             |
 | Ground (GND)	          | GND                   |
 
-### Programming the FPGA:
+Truth Table to verify 4:2 Encoder
 
-Define the Clock Divider Logic:
-
-    module ClockDivider(
-       input clk,          // Input clock signal
-       input reset,        // Reset signal
-       output reg clk_out1, // Divided clock output 1
-       output reg clk_out2  // Divided clock output 2
-    );
-
-    reg [31:0] counter1;
-    reg [31:0] counter2;
-
-    // Parameters for division
-    parameter DIV_FACTOR1 = 50_000_000; // Adjust for desired frequency
-    parameter DIV_FACTOR2 = 25_000_000; // Adjust for desired frequency
-
-    always @(posedge clk or posedge reset) begin
-       if (reset) begin
-          counter1 <= 0;
-          clk_out1 <= 0;
-       end else begin
-          if (counter1 == DIV_FACTOR1 - 1) begin
-              counter1 <= 0;
-              clk_out1 <= ~clk_out1;
-         end else begin
-              counter1 <= counter1 + 1;
-         end
-       end
-    end
-
-    always @(posedge clk or posedge reset) begin
-        if (reset) begin
-            counter2 <= 0;
-            clk_out2 <= 0;
-        end else begin
-            if (counter2 == DIV_FACTOR2 - 1) begin
-                counter2 <= 0;
-                clk_out2 <= ~clk_out2;
-            end else begin
-                counter2 <= counter2 + 1;
-            end
-         end
-      end
-
-    endmodule
+| D | C | B | A | O2 | O1 |
+| 0 | 0 | 0 | 1 | 0  | 0  |
+| 0 | 0 | 1 | 0 | 0  | 1  |
+| 0 | 1 | 0 | 0 | 1  | 0  |
+| 1 | 0 | 0 | 0 | 1  | 1  |
     
-### Programming and Testing:
 
-* Synthesize and Implement: Use FPGA design software (like Xilinx Vivado) to synthesize and implement the design.
-* Generate Bitstream: Create a bitstream file to program the FPGA.
-* Upload Bitstream: Use the appropriate tool to upload the bitstream to the VSDSquadron Mini FPGA board.
-* Test the Outputs: Verify the divided clock outputs using an oscilloscope or logic analyzer.
-
-### Application and Use Cases:
-
-This Clock Cycle Divider can be used in various applications requiring precise timing control, including:
-
-   * Digital Signal Processing: For creating multiple clock domains with different frequencies.
-   * Data Acquisition Systems: To synchronize data collection at different rates.
-   * Embedded Systems: Where different subsystems may require different clock frequencies.
-This project highlights the capabilities of the VSDSquadron Mini in handling clock management tasks, making it a powerful tool for developing complex digital systems.
 
 
 
