@@ -315,6 +315,7 @@ This project involves the implementation of a 4:2 Encoder combinational circuit 
 Truth Table to verify 4:2 Encoder
 
 | D | C | B | A | O2 | O1 |
+|---|---|---|---|----|----|
 | 0 | 0 | 0 | 1 | 0  | 0  |
 | 0 | 0 | 1 | 0 | 0  | 1  |
 | 0 | 1 | 0 | 0 | 1  | 0  |
