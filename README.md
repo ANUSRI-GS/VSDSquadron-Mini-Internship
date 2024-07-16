@@ -307,10 +307,8 @@ This project involves the implementation of a 4:2 Encoder combinational circuit 
 
 |Component              	| VSDSquadron Mini Pin  |
 |-------------------------|---------------------- |
-| Clock Source          	|  Clock Input Pin      |
-| Divided Clock Output 1	| GPIO Pin 1            |
-| Divided Clock Output 2	| GPIO Pin 2            |
-| Power (VCC)            	| VCC                   |
+| Push Button           	| GPIO Pins             |
+| LED                   	| GPIO Pins             |
 | Ground (GND)	          | GND                   |
 
 ### Programming the FPGA:
