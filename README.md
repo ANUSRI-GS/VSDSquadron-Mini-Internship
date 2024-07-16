@@ -312,7 +312,7 @@ This project involves the implementation of a 4:2 Encoder combinational circuit 
 | LED                   	| GPIO Pins             |
 | Ground (GND)	          | GND                   |
 
-Truth Table to verify 4:2 Encoder
+### Truth Table to verify 4:2 Encoder
 
 | D | C | B | A | O2 | O1 |
 |---|---|---|---|----|----|
@@ -321,6 +321,69 @@ Truth Table to verify 4:2 Encoder
 | 0 | 1 | 0 | 0 | 1  | 0  |
 | 1 | 0 | 0 | 0 | 1  | 1  |
     
+### Program
+
+ 
+            #include "ch32v003_gpio.h"
+
+    // Function to initialize GPIO pins
+       void GPIO_Init() {
+          // Initialize input pins (A0, A1, A2, A3)
+          GPIO_InitTypeDef GPIO_InitStruct;
+          GPIO_InitStruct.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3;
+          GPIO_InitStruct.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+          GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+          // Initialize output pins (B0, B1)
+          GPIO_InitStruct.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1;
+          GPIO_InitStruct.GPIO_Mode = GPIO_Mode_Out_PP;
+          GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;
+          GPIO_Init(GPIOB, &GPIO_InitStruct);
+      }
+      
+      // Function to read inputs and encode them
+      void Encoder_4to2() {
+          uint8_t input = (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0) << 0) |
+                          (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_1) << 1) |
+                          (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_2) << 2) |
+                          (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_3) << 3);
+    
+        uint8_t encodedOutput = 0;
+    
+        switch (input) {
+            case 0x01:
+                encodedOutput = 0x00;
+                break;
+            case 0x02:
+                encodedOutput = 0x01;
+                break;
+            case 0x04:
+                encodedOutput = 0x02;
+                break;
+            case 0x08:
+                encodedOutput = 0x03;
+                break;
+            default:
+                encodedOutput = 0x00; // Default case
+                break;
+        }
+    
+        // Set output pins
+        GPIO_WriteBit(GPIOB, GPIO_Pin_0, (encodedOutput & 0x01) ? Bit_SET : Bit_RESET);
+        GPIO_WriteBit(GPIOB, GPIO_Pin_1, (encodedOutput & 0x02) ? Bit_SET : Bit_RESET);
+    }
+    
+    int main(void) {
+        // Initialize the system
+        SystemInit();
+        // Initialize GPIO
+        GPIO_Init();
+    
+        while (1) {
+            // Encode inputs
+            Encoder_4to2();
+        }
+    }
 
 
 
