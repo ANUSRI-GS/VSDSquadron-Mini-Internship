@@ -394,8 +394,6 @@ This project involves the implementation of a 4:2 Encoder combinational circuit 
 
 
 
-
-
   
 
 
