@@ -300,6 +300,7 @@ This project involves the implementation of a 4:2 Encoder combinational circuit 
 
 ### Hardware Connection:
 
+![WhatsApp Image 2024-07-16 at 9 40 34 PM](https://github.com/user-attachments/assets/c50d1fb2-ed39-480f-b05c-05355420e64c)
 
 
 ### Pinout Diagram:
