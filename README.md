@@ -387,8 +387,7 @@ This project involves the implementation of a 4:2 Encoder combinational circuit 
 
 ### Application Video
  
-https://github.com/user-attachments/assets/cf8faa0a-0767-4abd-937b-25536d158bbc
-
+https://github.com/user-attachments/assets/a38894bf-860a-49d7-a9e8-36114f82b6f3
 
 
 
